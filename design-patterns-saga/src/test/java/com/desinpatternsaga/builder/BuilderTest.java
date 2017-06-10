@@ -8,6 +8,9 @@ import java.util.Random;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.designpatternsaga.builder.Calculation;
+import com.designpatternsaga.builder.Price;
+
 public class BuilderTest {
 	
 	private static final long ID_CALCULATION = 1L;

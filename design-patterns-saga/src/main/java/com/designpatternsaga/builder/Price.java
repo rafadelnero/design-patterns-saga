@@ -1,4 +1,4 @@
-package com.desinpatternsaga.builder;
+package com.designpatternsaga.builder;
 
 import java.math.BigDecimal;
 
