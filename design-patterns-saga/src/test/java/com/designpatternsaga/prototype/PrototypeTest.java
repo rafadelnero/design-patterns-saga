@@ -48,15 +48,15 @@ public class PrototypeTest {
 	}
 
 	private void checkIfTheObjectsAreCloned(Contract contract, Contract contractToBeCopied) {
-		Assert.assertTrue(contract.getIdContract() == contractToBeCopied.getIdContract());
+		Assert.assertTrue(contract.getId() == contractToBeCopied.getId());
 		Assert.assertTrue(contract.getName().equals(contractToBeCopied.getName()));
-		Assert.assertTrue(contract.getContractValue().equals(contractToBeCopied.getContractValue()));
+		Assert.assertTrue(contract.getPrice().equals(contractToBeCopied.getPrice()));
 		
 		ContractComplement complement = contract.getContractComplement();
 		ContractComplement copiedComplement = contractToBeCopied.getContractComplement();
 		
 		Assert.assertTrue(complement.getComplementName().equals(copiedComplement.getComplementName()));
-		Assert.assertTrue(complement.getQtdCustomers().equals(copiedComplement.getQtdCustomers()));
+		Assert.assertTrue(complement.getSpecificProductPrice().equals(copiedComplement.getSpecificProductPrice()));
 		
 		Assert.assertFalse(contract.equals(contractToBeCopied));
 		Assert.assertFalse(contract.getContractComplement().equals(contractToBeCopied.getContractComplement()));

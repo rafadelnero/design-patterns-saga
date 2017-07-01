@@ -4,19 +4,20 @@ import java.math.BigDecimal;
 
 public class Contract implements Cloneable {
 
-	private long idContract;
+	private long id;
 
 	private String name;
 
 	private ContractComplement contractComplement;
 
-	private BigDecimal contractValue;
+	private BigDecimal price;
 
-	public Contract(long idContract, String name, ContractComplement contractComplement, BigDecimal contractValue) {
-		this.idContract = idContract;
+	public Contract(long id, String name, 
+			ContractComplement contractComplement, BigDecimal price) {
+		this.id = id;
 		this.name = name;
 		this.contractComplement = contractComplement;
-		this.contractValue = contractValue;
+		this.price = price;
 	}
 
 	public Contract() {
@@ -35,36 +36,36 @@ public class Contract implements Cloneable {
 		}
 	}
 
-	public long getIdContract() {
-		return idContract;
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	public ContractComplement getContractComplement() {
-		return contractComplement;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public BigDecimal getContractValue() {
-		return contractValue;
+	public ContractComplement getContractComplement() {
+		return contractComplement;
 	}
 
 	public void setContractComplement(ContractComplement contractComplement) {
 		this.contractComplement = contractComplement;
 	}
 
-	public void setIdContract(long idContract) {
-		this.idContract = idContract;
+	public BigDecimal getPrice() {
+		return price;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
-
-	public void setContractValue(BigDecimal contractValue) {
-		this.contractValue = contractValue;
-	}
-
+	
 }

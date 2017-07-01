@@ -4,15 +4,15 @@ public class ContractComplement implements Cloneable {
 
 	private String complementName;
 	
-	private Integer qtdCustomers;
+	private Integer specificProductPrice;
 	
-	public ContractComplement(String complementName, Integer qtdCustomers) {
-		this.complementName = complementName;
-		this.qtdCustomers = qtdCustomers;
-	}
-
 	public ContractComplement() {
 		super();
+	}
+	
+	public ContractComplement(String complementName, Integer specificProductPrice) {
+		this.complementName = complementName;
+		this.specificProductPrice = specificProductPrice;
 	}
 
 	@Override
@@ -24,15 +24,16 @@ public class ContractComplement implements Cloneable {
 		return complementName;
 	}
 
-	public Integer getQtdCustomers() {
-		return qtdCustomers;
-	}
-
 	public void setComplementName(String complementName) {
 		this.complementName = complementName;
 	}
 
-	public void setQtdCustomers(Integer qtdCustomers) {
-		this.qtdCustomers = qtdCustomers;
+	public Integer getSpecificProductPrice() {
+		return specificProductPrice;
 	}
+
+	public void setSpecificProductPrice(Integer specificProductPrice) {
+		this.specificProductPrice = specificProductPrice;
+	}
+
 }
