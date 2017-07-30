@@ -8,7 +8,7 @@ public abstract class UserActionsLog {
 	
 	private boolean logCreated;
 	
-	public UserActionsLog(String userName) {
+	protected UserActionsLog(String userName) {
 		createLogFile();
 		this.userName = userName;
 	}
