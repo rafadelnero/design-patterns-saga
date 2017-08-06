@@ -13,7 +13,8 @@ public class BonusAdapterTest {
 	
 	@Test
 	public void legacyServiceAdapterTest() {
-		LegacyProductPOJO legacyProduct = new LegacyProductService().findLegacyProduct();
+		LegacyProductPOJO legacyProduct = new LegacyProductService()
+				.findLegacyProduct();
 		
 		Product adapter = new LegacyProductAdapter(legacyProduct);
 		
