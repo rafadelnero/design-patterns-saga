@@ -6,11 +6,6 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.designpatternsaga.adapter.bonusexample.LegacyProductAdapter;
-import com.designpatternsaga.adapter.bonusexample.LegacyProductPOJO;
-import com.designpatternsaga.adapter.bonusexample.LegacyProductService;
-import com.designpatternsaga.adapter.bonusexample.ProductService;
-
 public class AdapterTest {
 
 	@Test
