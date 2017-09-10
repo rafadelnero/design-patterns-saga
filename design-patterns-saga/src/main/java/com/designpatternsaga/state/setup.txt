@@ -1,0 +1,6 @@
+These examples were ran in a Java project that was created in Eclipse/Spring STS. 
+
+There are no special libraries needed and should run with Java 1.7+.
+
+The source is expecting a package structure of com.pluralsight.state and should
+be able to Run As from there.
