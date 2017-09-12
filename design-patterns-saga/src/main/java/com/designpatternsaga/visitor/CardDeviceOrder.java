@@ -27,4 +27,11 @@ public class CardDeviceOrder implements CardDevice {
 		}
 		visitor.visit(this);
 	}
+	
+	@Override
+	public String toString() {
+		return getClass().getCanonicalName();
+	}
+	
+	
 }

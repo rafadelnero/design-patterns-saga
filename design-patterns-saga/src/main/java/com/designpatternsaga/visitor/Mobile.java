@@ -5,4 +5,9 @@ public class Mobile implements CardDevice {
 	public void accept(CardDeviceVisitor visitor) {
 		visitor.visit(this);
 	}
+	
+	@Override
+	public String toString() {
+		return getClass().getCanonicalName();
+	}
 }
