@@ -11,7 +11,7 @@ public class AutomaticWindow {
 		super();
 	}
 
-	public void openDoor() {
+	public void openWindow() {
 		if (state == OPEN) {
 			System.out.println("Window is already open");
 		} else if (state == CLOSED) {
@@ -20,7 +20,7 @@ public class AutomaticWindow {
 		}
 	}
 
-	public void closeDoor() {
+	public void closeWindow() {
 		if (state == OPEN) {
 			System.out.println("Closing window.");
 			state = CLOSED;

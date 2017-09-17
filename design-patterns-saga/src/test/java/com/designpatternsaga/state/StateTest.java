@@ -27,9 +27,9 @@ public class StateTest {
 	public void badExampleStateTest() {
 		AutomaticWindow automaticWindow = new AutomaticWindow();
 		
-		automaticWindow.openDoor();
+		automaticWindow.openWindow();
 		
-		automaticWindow.closeDoor();
+		automaticWindow.closeWindow();
 		
 		Assert.assertEquals(automaticWindow.toString(), 
 				"Window is closed");
