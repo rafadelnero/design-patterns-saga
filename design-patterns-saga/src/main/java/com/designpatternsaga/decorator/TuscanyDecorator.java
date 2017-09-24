@@ -1,8 +1,8 @@
 package com.designpatternsaga.decorator;
 
-public class DressingDecorator extends PizzaDecorator {
+public class TuscanyDecorator extends PizzaDecorator {
 
-	public DressingDecorator(Pizza customPizza) {
+	public TuscanyDecorator(Pizza customPizza) {
 		super(customPizza);
 	}
 

@@ -13,7 +13,7 @@ public class DecoratorTest {
 
 	@Test
 	public void decoratorTest() {
-		Pizza pizza = new DressingDecorator(
+		Pizza pizza = new TuscanyDecorator(
 				new MozzarellaDecorator(new SimplePizza()));
 		
 		Assert.assertEquals("Base + Mozzarella + Tuscany", pizza.make());
