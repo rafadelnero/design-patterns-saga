@@ -7,10 +7,10 @@ public class TuscanyDecorator extends PizzaDecorator {
 	}
 
 	public String make() {
-		return customPizza.make() + addDressing();
+		return customPizza.make() + addTuscany();
 	}
 	
-	private String addDressing() {
+	private String addTuscany() {
 		return " + Tuscany";
 	}
 	
